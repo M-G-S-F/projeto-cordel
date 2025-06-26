@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-destaque: 'Passion One', sans-serif;
+    --fonte-cordel:'Sriracha', sans-serif;
+    --fonte-sub: 'Bebas Neue', sans-serif;
+}
+
+body {
+
+}
+
+
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+header h1{
+    font-family: var(--fonte-destaque);
+    font-size: 60px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-weight: normal;
+}
+
+header a {
+    font-family: var(--fonte-sub);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    margin: auto;
+    background: black, url(imagens/background001.jpg), center center, no-repeat, fixed;
+    background-size: cover;
+}
+
+.page {
+    padding: 150px 20px;
+}
+
+.page p {
+    font-size: 25px;
+    font-family: var(--fonte-cordel);
+    line-height: 60px;
+}
+
+.one {
+    background-color: white;
+}
+
+.two {
+    
+}
+
+
