@@ -1,74 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte-destaque: 'Passion One', sans-serif;
+    --fonte-normal: 'Sriracha', sans-serif;
+}
 
 * {
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --fonte-destaque: 'Passion One', sans-serif;
-    --fonte-cordel:'Sriracha', sans-serif;
-    --fonte-sub: 'Bebas Neue', sans-serif;
-}
-
-body {
-
-}
-
-
-
 header {
+    padding: 3em;
     text-align: center;
-    background-color: black;
     color: white;
-    padding: 50px;
+    background-color: black;
 }
 
 header h1{
     font-family: var(--fonte-destaque);
-    font-size: 60px;
-    padding: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
+    font-size: 6vh;
 }
 
-header h2 {
-    font-weight: normal;
-}
-
-header a {
-    font-family: var(--fonte-sub);
+header a, header h2{
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-size: 5vh;
 }
 
-main {
+section {
     margin: auto;
-    background: black, url(imagens/background001.jpg), center center, no-repeat, fixed;
+    padding: 4em 2em;
+}
+
+section p {
+    font-size: 4vh;
+    font-family: var(--fonte-normal);
+    line-height: 2.5em;
+}
+
+section.texto {
+    background: white;
+}
+
+section.imagem {
+    background-color: rgb(82, 82, 82);
+    box-shadow: inset 2px 2px 2px black;
+}
+
+.imagem p {
+    background-color: rgba(0, 0, 0, 0.527);
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+section.joana {
+    background-image: url(imagens/background001.jpg);
+    background-position: left center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-.page {
-    padding: 150px 20px;
+section.livro {
+    background-image: url(imagens/background002.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.page p {
-    font-size: 25px;
-    font-family: var(--fonte-cordel);
-    line-height: 60px;
-}
-
-.one {
-    background-color: white;
-}
-
-.two {
-    
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-normal);
 }
 
 
